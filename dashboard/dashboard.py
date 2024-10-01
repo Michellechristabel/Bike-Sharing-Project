@@ -58,7 +58,7 @@ max_date_day = day_df["dteday"].max()
 
 with st.sidebar:
     # Menambahkan logo
-    st.image("logo.jpg")
+    st.image("dashboard/logo.jpg")
 
     # Mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
@@ -101,8 +101,6 @@ plt.plot(rentals_df.index, rentals_df['total'], color='#2596BE')
 plt.xlabel(None)
 plt.ylabel(None)
 plt.title("Number of Users")
-#plt.xticks(rotation=45)
-#plt.grid(True)
 plt.tight_layout()
 st.pyplot(plt)
 
