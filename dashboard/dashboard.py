@@ -79,18 +79,18 @@ season_df = create_season_df(main_df)
 rfm_df = create_rfm_df(main_df)
 
 # Membuat dashboard
-st.header('Bike Sharing Dashboard :sparkles:')
+st.header('Bike Sharing Dashboard')
 
-st.subheader('Daily Users')
+st.subheader('Pengguna Harian')
 col1, col2, col3 = st.columns(3)
 
 with col1:
     total_casual = rentals_df.casual.sum()
-    st.metric("Total Casual User", value=total_casual)
+    st.metric("Total Pengguna Casual", value=total_casual)
 
 with col2:
     total_registered = rentals_df.registered.sum()
-    st.metric("Total Registered User", value=total_registered)
+    st.metric("Total Pengguna Registered", value=total_registered)
 
 with col3:
     total_users = rentals_df.total.sum()
@@ -175,7 +175,7 @@ plt.tick_params(axis="y", labelsize=30)
 st.pyplot(plt)
 
 #RFM Analysis
-st.subheader("Pelanggan Terbaik Berdasarkan Analisis RFM")
+st.subheader("Analisis RFM Penyewaan Sepeda")
 col1, col2, col3 = st.columns(3)
 
 with col1:
