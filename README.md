@@ -6,7 +6,7 @@
 ## Prosedur Menjalankan Project
 1. Lakukan clone repository
 ```
-https://github.com/Michellechristabel/Bike-Sharing-Project.git
+git clone https://github.com/Michellechristabel/Bike-Sharing-Project.git
 ```
 2. Install semua library 
 ```
