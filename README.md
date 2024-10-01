@@ -1,8 +1,5 @@
 # Data Analytics Project: Bike Sharing Dataset
 
-## Bike Sharing Dataset
-[**Bike Sharing Dataset**](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset) merupakan kumpulan data yang berisi jumlah sewa sepeda per hari dan per jam pada tahun 2011 dan 2012.
-
 ## Prosedur Menjalankan Project
 1. Lakukan clone repository
 ```
