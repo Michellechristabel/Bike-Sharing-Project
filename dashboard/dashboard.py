@@ -44,7 +44,7 @@ def create_rfm_df(day_df):
     return rfm_df
 
 # Prepare Data Frame
-day_df = pd.read_csv("dashboard/day_clean.csv")
+day_df = pd.read_csv("day_clean.csv")
 
 datetime_columns = ["dteday"]
 day_df.sort_values(by="dteday", inplace=True)
@@ -58,7 +58,7 @@ max_date_day = day_df["dteday"].max()
 
 with st.sidebar:
     # Menambahkan logo
-    st.image("dashboard/logo.jpg")
+    st.image("logo.jpg")
 
     # Mengambil start_date dan end_date dari date_input
     start_date, end_date = st.date_input(
